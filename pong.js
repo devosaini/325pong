@@ -7,7 +7,7 @@ class Bat {
     this.ctx = ctx;
     this.data = data;
     this.gameWidth = gameWidth;
-    this.width = gameWidth / 10;
+    this.width = gameWidth / 7;
     this.height = 2;
     this.x = 0;
     this.y = batY - this.height - 2;
