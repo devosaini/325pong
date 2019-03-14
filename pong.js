@@ -60,8 +60,8 @@ class Ball {
     this.maxX = maxX - 1;
     this.maxY = maxY - 1;
     this.game = game;
-    this.xDir = 2;
-    this.yDir = 2;
+    this.xDir = 1;
+    this.yDir = 1;
     this.reset();
   }
 
@@ -73,7 +73,7 @@ class Ball {
     if (this.x >= this.maxX || this.x <= 0) this.xDir *= -1;
     if (this.game.batA.hitsBall(this) || this.game.batB.hitsBall(this)) {
       this.yDir *= -1;
-      this.speed += 0.1;
+      this.speed += 0.4;
     }
     if (this.y <= 0) this.score(this.game.playerBData);
     if (this.y >= this.maxY) this.score(this.game.playerAData);
