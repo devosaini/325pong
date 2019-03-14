@@ -60,8 +60,8 @@ class Ball {
     this.maxX = maxX - 1;
     this.maxY = maxY - 1;
     this.game = game;
-    this.xDir = 1;
-    this.yDir = 1;
+    this.xDir = 2;
+    this.yDir = 2;
     this.reset();
   }
 
