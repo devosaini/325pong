@@ -66,7 +66,7 @@ class Ball {
   }
 
   draw() {
-    this.ctx.fillRect(this.x, this.y, 2, 2);
+    this.ctx.fillRect(this.x, this.y, 3, 3);
   }
 
   move() {
