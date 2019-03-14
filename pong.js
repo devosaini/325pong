@@ -7,7 +7,7 @@ class Bat {
     this.ctx = ctx;
     this.data = data;
     this.gameWidth = gameWidth;
-    this.width = gameWidth / 7;
+    this.width = gameWidth / 10;
     this.height = 2;
     this.x = 0;
     this.y = batY - this.height - 2;
@@ -66,14 +66,14 @@ class Ball {
   }
 
   draw() {
-    this.ctx.fillRect(this.x, this.y, 3, 3);
+    this.ctx.fillRect(this.x, this.y, 2, 2);
   }
 
   move() {
     if (this.x >= this.maxX || this.x <= 0) this.xDir *= -1;
     if (this.game.batA.hitsBall(this) || this.game.batB.hitsBall(this)) {
       this.yDir *= -1;
-      this.speed += 0.4;
+      this.speed += 0.1;
     }
     if (this.y <= 0) this.score(this.game.playerBData);
     if (this.y >= this.maxY) this.score(this.game.playerAData);
