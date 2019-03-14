@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: black;
+      }
+  	#game {
+        width: calc(100vw - 10px);
+        height: 73vh;
+        margin: 5px;
+        border: 5px #00ff41 solid;
+        box-sizing: border-box;
+      }
+  	.swiper {
+        width: calc(100vw - 40px);
+        height: 10vh;
+        margin: 10px 20px;
+        border: 2px grey solid;
+        box-sizing: border-box;
+        color: #00ff41;
+      }
+  </style>
+</head>
+<body>
+  <div id="swiperA" class="swiper"></div>
+  <canvas id="game"></canvas>
+  <div id="swiperB" class="swiper"></div>
+  <script src="pong.js"></script>
+</body>
+</html>
